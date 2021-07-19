@@ -6,9 +6,9 @@ import './assets/css/global.css'
 
 import TreeTable from 'vue-table-with-tree-grid'
 
-import Element from 'element-ui'
+import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
-Vue.use(Element)
+Vue.use(ElementUI);
 
 import axios from 'axios'
 // 配置请求的路径
