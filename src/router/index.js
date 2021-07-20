@@ -1,17 +1,17 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Login from '../components/Login.vue'
-import Home from '../components/Home.vue'
-import Welcome from '../components/Welcome.vue'
-import Users from '../components/user/Users.vue'
-import Rights from '../components/power/Rights.vue'
-import Roles from '../components/power/Roles.vue'
-import Cate from '../components/goods/Cate.vue'
-import Params from '../components/goods/Params.vue';
-import List from '../components/goods/List.vue'
-import Add from '../components/goods/Add.vue'
-import Order from '../components/order/Order.vue'
-import Report from '../components/report/Report.vue'
+const Login = () => import('../components/Login')
+const Home = () => import('../components/Home')
+const Welcome = () => import('../components/Welcome')
+const Users = () => import('../components/user/Users')
+const Rights = () => import('../components/power/Rights')
+const Roles = () => import('../components/power/Roles')
+const Cate = () => import('../components/goods/Cate')
+const Params = () => import('../components/goods/Params')
+const List = () => import('../components/goods/List')
+const Add = () => import('../components/goods/Add')
+const Order = () => import('../components/order/Order')
+const Report = () => import('../components/report/Report')
 
 Vue.use(VueRouter)
 

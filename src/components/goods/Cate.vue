@@ -40,7 +40,7 @@
         </template>
 
         <!-- 操作 -->
-        <template slot="opt" slot-scope="scope">
+        <template slot="opt">
           <el-button type="primary" icon="el-icon-edit" size="mini">编辑</el-button>
           <el-button type="danger" icon="el-icon-delete" size="mini">删除</el-button>
         </template>
@@ -174,7 +174,7 @@ export default {
         return this.$message.error('获取商品分类失败')
       }
 
-      console.log(res.data)
+      // console.log(res.data)
       // 把数据列表，赋值给catelist
       this.catelist = res.data.result
       // 为总数据条数赋值
@@ -204,12 +204,12 @@ export default {
         return this.$message.error('获取父级分类数据失败')
       }
 
-      console.log(res.data)
+      // console.log(res.data)
       this.parentCateList = res.data
     },
     // 选择项发送变化触发这个函数
     parentCateChanged(){
-      console.log(this.selectedKeys)
+      // console.log(this.selectedKeys)
       // 如果selectedKeys数组中的length大于0，证明选中的父级分类
       // 反之，就说明没有选中任何父级分类
       if(this.selectedKeys.length > 0){

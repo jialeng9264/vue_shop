@@ -40,7 +40,7 @@
                   </el-col>
                   <el-col :span="18">
                     <el-tag type="warning" 
-                      v-for="(item3,i3) in item2.children" 
+                      v-for="item3 in item2.children" 
                       :key="item3.id"
                       closable
                       @close="removeRightById(scope.row,item3.id)"
@@ -160,7 +160,7 @@ export default {
 
       // 把获取到的权限数据保存到data中
       this.rightslist = res.data
-      console.log(this.rightslist)
+      // console.log(this.rightslist)
 
       // 递归获取三级节点的id
       this.getLeafKeys(role,this.defKeys)

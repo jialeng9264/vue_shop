@@ -203,7 +203,7 @@ export default {
       }
       this.catelist = res.data
 
-      console.log(this.catelist)
+      // console.log(this.catelist)
     },
     // 级联选择框选中项变化，会出发这个函数
     handleChange(){
@@ -224,7 +224,7 @@ export default {
       }
 
       // 证明选中的是三级分类
-      console.log(this.selectedCateKeys)
+      // console.log(this.selectedCateKeys)
       // 根据所选分类的Id，和当前所处的面板，获取对应的参数
       const { data: res } = await this.$http.get(
         `categories/${this.cateId}/attributes`,
@@ -244,7 +244,7 @@ export default {
         // 文本框中输入的值
         item.inputValue = ''
       })
-      console.log(res.data)
+      // console.log(res.data)
       if(this.activeName === 'many'){
         this.manyTableData = res.data
       }else{

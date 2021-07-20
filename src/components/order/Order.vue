@@ -35,7 +35,7 @@
           </template>
         </el-table-column>
         <el-table-column label="操作">
-          <template slot-scope="scope">
+          <template>
             <el-button type="primary" icon="el-icon-edit" size="mini" @click="showBox"></el-button>
             <el-button type="success" icon="el-icon-location" size="mini" @click="showProgressBox"></el-button>
           </template>
@@ -134,7 +134,7 @@ export default {
         return this.$message.error('获取订单列表失败')
       }
 
-      console.log(res)
+      // console.log(res)
       this.total = res.data.total
       this.orderlist = res.data.goods
     },
@@ -163,7 +163,7 @@ export default {
       this.progressInfo = res.data
 
       this.progressVisible = true
-      console.log(this.progressInfo)
+      // console.log(this.progressInfo)
     }
   }
 }
